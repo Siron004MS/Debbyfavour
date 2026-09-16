@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You my lovely Cherie ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating background hearts -->
+    <div class="hearts"></div>
+
+    <main class="container">
+
+        <!-- INTRO -->
+        <section class="card active" id="intro">
+
+            <div class="emoji">💌</div>
+
+            <h1>Hey Cherie ❤️</h1>
+
+            <p>
+            I have a very important question for you...
+            </p>
+
+            <button class="yes-btn" onclick="startQuestions()">
+                I'm listening 👀
+            </button>
+
+        </section>
+
+
+        <!-- QUESTION 1 -->
+        <section class="card" id="question1">
+
+            <div class="emoji">🥰</div>
+
+            <h2>
+                Cherie...
+            </h2>
+
+            <p>
+                Would you like to spend some special time
+                with your me? ❤️
+            </p>
+
+            <div class="buttons">
+                <button class="yes-btn" onclick="yesReaction(2)">
+                    YES ❤️
+                </button>
+
+                <button class="no-btn" onmouseover="runAway(this)">
+                    NO 😏
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- QUESTION 2 -->
+        <section class="card" id="question2">
+
+            <div class="emoji">🌹</div>
+
+            <h2>
+                Okay... one more thing 😌
+            </h2>
+
+            <p>
+                will you marry me? 💕
+            </p>
+
+            <div class="buttons">
+                <button class="yes-btn" onclick="yesReaction(3)">
+                    YES 🥹❤️
+                </button>
+
+                <button class="no-btn" onmouseover="runAway(this)">
+                    NO 🙈
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- ACE QUESTION -->
+        <section class="card" id="question3">
+
+    <div class="emoji">🐣</div>
+
+    <h2>
+        One VERY important question...
+    </h2>
+
+    <p>
+        Can we have Ace now? 🥹❤️
+    </p>
+
+    <div class="buttons ace-buttons">
+
+        <button class="yes-btn" onclick="aceYes()">
+            YES 🐣❤️
+        </button>
+
+        <button
+            class="no-btn"
+            id="aceNoButton"
+            onmouseover="runAceAway()"
+            ontouchstart="runAceAway()"
+            onclick="runAceAway()"
+        >
+            NO 😂
+        </button>
+
+    </div>
+
+    <p id="noMessage" class="no-message"></p>
+
+</section>
+
+
+        <!-- ACE RESPONSE -->
+        <section class="card" id="aceResponse">
+
+            <div class="emoji">😂👌</div>
+
+            <h2>
+                JUST KIDDING! 😁👌
+            </h2>
+
+            <p>
+                I have everything under control ❤️
+            </p>
+
+            <button class="yes-btn" onclick="continueToDate()">
+                Okay Amore 😌❤️
+            </button>
+
+        </section>
+
+
+        <!-- DATE PICKER -->
+        <section class="card" id="datePicker">
+
+            <div class="emoji">📅❤️</div>
+
+            <h2>
+                Now you pick the day, Cherie 😌
+            </h2>
+
+            <p>
+                When should I Amore take you on this date?
+            </p>
+
+            <input
+                type="date"
+                id="dateInput"
+            >
+
+            <button
+                class="yes-btn date-btn"
+                onclick="confirmDate()"
+            >
+                This Day ❤️
+            </button>
+
+        </section>
+
+
+        <!-- CONFIRMATION -->
+        <section class="card" id="confirmation">
+
+            <div class="emoji">💖✨</div>
+
+            <h1>
+                IT'S A DATE! ❤️
+            </h1>
+
+            <p>
+                Amore + Cherie
+            </p>
+
+            <div class="date-display" id="selectedDate"></div>
+
+            <p class="small-text">
+                A little adventure for two. 🥰
+            </p>
+
+            <button
+                class="whatsapp-btn"
+                onclick="sendWhatsApp()"
+            >
+                💬 Tell Amore ❤️
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Confetti container -->
+    <div id="celebration"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
